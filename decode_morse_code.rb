@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/MethodLength
 def decode_char(str)
   # Method to decode single Morse code character
   morse_code_dict = {
@@ -30,6 +31,7 @@ def decode_char(str)
   }
   morse_code_dict[str]
 end
+# rubocop:enable Metrics/MethodLength
 
 def decode_word(str)
   str_arr = str.split
@@ -49,5 +51,5 @@ def decode(str)
   final_output
 end
 
-# print decode("-- -.--   -. .- -- .")
 print decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+# Returns A BOX FULL OF RUBIES
